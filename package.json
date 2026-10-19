@@ -6,6 +6,6 @@
     "test:deployment": "node --test scripts/ops-deploy.test.mjs"
   },
   "devDependencies": {
-    "wrangler": "4.130.0"
+    "wrangler": "4.151.2"
   }
 }
