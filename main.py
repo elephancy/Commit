@@ -491,10 +491,10 @@ def main():
         sys.stderr.write("Not a git repository. Initialize one and add a remote before running.\n")
         return
 
-    if args.branch:
-        run(["git", "checkout", "-B", args.branch])
-
     dry_run = args.dry_run or os.environ.get("DRY_RUN") is not None
+
+    if args.branch and not dry_run:
+        run(["git", "checkout", "-B", args.branch])
 
     total = 0
     for year, word in mappings:
