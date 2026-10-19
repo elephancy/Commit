@@ -1,0 +1,11 @@
+{
+  "name": "commit-site",
+  "private": true,
+  "scripts": {
+    "deploy:cloudflare": "node scripts/ops-deploy.mjs --engine wrangler --config wrangler.jsonc",
+    "test:deployment": "node --test scripts/ops-deploy.test.mjs"
+  },
+  "devDependencies": {
+    "wrangler": "4.130.0"
+  }
+}

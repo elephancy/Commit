@@ -1,0 +1,7 @@
+# Publish only the static app, never tooling or ephemeral deployment configs.
+*
+!/index.html
+!/app.js
+!/styles.css
+!/Logo.ico
+!/Logo.png

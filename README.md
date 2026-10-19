@@ -26,3 +26,18 @@ You can alternatively go on `https://commit.elfeel.me` and use the app directly 
 ## Local commit runner
 
 `main.py` is still included for people who want to apply the same shapes in a local repository. The browser app now generates direct `git commit` commands for copying.
+
+### Central Ops deployment policy
+
+Production deployment must use the central entrypoint below. It downloads the
+Ops deployment runner over HTTPS, which applies current Ops-owned observability
+policy to an ephemeral config while preserving application bindings and existing
+log export destinations. If Ops is unavailable or validation fails, deployment
+stops. Direct production `wrangler deploy` and `opennextjs-cloudflare deploy`
+bypass this boundary and must not be used. Local preview and dry-run commands
+remain available. No telemetry settings or Ops credentials belong in this repo.
+
+```bash
+npm ci
+npm run deploy:cloudflare
+```
