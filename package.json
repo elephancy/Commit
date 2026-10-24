@@ -6,7 +6,7 @@
     "test:deployment": "node --test scripts/ops-deploy.test.mjs"
   },
   "devDependencies": {
-    "wrangler": "4.151.2"
+    "wrangler": "4.151.3"
   },
   "overrides": {
     "miniflare@5.20261019.0-beta": {
