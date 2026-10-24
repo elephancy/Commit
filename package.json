@@ -9,7 +9,7 @@
     "wrangler": "4.151.3"
   },
   "overrides": {
-    "miniflare@5.20261019.0-beta": {
+    "miniflare": {
       "undici": "7.30.1"
     }
   }
