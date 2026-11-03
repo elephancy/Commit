@@ -3,10 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Commit | GitHub Contribution Graph Designer</title>
     <meta
       name="description"
-      content="Draw GitHub contribution graph shapes here and copy the commit command."
+      content="Draw GitHub contribution graph designs across multiple years and copy the generated Git commit commands with Commit."
     />
+    <link rel="canonical" href="https://commit.elfeel.me/" />
     <link rel="icon" href="./Logo.ico" sizes="any" />
     <link rel="apple-touch-icon" href="./Logo.png" />
     <link rel="stylesheet" href="./styles.css" />
@@ -16,7 +18,7 @@
     <div class="shell">
       <header class="hero glass-shell">
         <a class="brand-lockup" href="https://elfeel.me" target="_blank" rel="noreferrer" aria-label="Open elfeel.me">
-          <img class="brand-logo" src="./Logo.png" alt="" />
+          <img class="brand-logo" src="./Logo.ico" alt="" />
           <span class="brand-name">Commit</span>
         </a>
         <div class="hero-copy">
@@ -147,7 +149,7 @@
                 <span class="command-shell-dot"></span>
                 <span class="command-shell-label">Copy and run</span>
               </div>
-              <textarea id="command" class="command" readonly spellcheck="false"></textarea>
+              <textarea id="command" class="command" aria-label="Generated Git commit command" readonly spellcheck="false"></textarea>
             </div>
           </section>
         </main>
@@ -155,7 +157,7 @@
 
       <footer class="site-footer">
         <a class="footer-brand" href="https://elfeel.me" target="_blank" rel="noreferrer" aria-label="Open elfeel.me">
-          <img class="footer-logo" src="./Logo.png" alt="" />
+          <img class="footer-logo" src="./Logo.ico" alt="" />
         </a>
         <div class="footer-copy">
           <span>(c) mahmoud elfeel 2026</span>
