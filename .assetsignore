@@ -1,6 +1,7 @@
 # Publish only the static app, never tooling or ephemeral deployment configs.
 *
 !/index.html
+!/robots.txt
 !/app.js
 !/styles.css
 !/Logo.ico
